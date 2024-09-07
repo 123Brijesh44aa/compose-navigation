@@ -20,7 +20,6 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun HomeScreen(
-    home: String?,
     onNavigateToProfile: () -> Unit
 ) {
     Column(
@@ -30,22 +29,22 @@ fun HomeScreen(
     ) {
         Text(
             modifier = Modifier.padding(bottom = 50.dp),
-            text = home ?: "No Data",
+            text = "Home Screen",
             style = TextStyle(
                 fontSize = 40.sp
             )
         )
-        OutlinedButton(
-            modifier = Modifier
-                .padding(20.dp)
-                .size(height = 60.dp, width = 300.dp),
-            onClick = {
-                onNavigateToProfile()
-            },
-            shape = RoundedCornerShape(16),
-            border = BorderStroke(width = 3.dp, color = Color.Green)
-        ) {
-            Text(text = "Go To Profile", style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold), color = Color.White)
-        }
+//        OutlinedButton(
+//            modifier = Modifier
+//                .padding(20.dp)
+//                .size(height = 60.dp, width = 300.dp),
+//            onClick = {
+//                onNavigateToProfile()
+//            },
+//            shape = RoundedCornerShape(16),
+//            border = BorderStroke(width = 3.dp, color = Color.Green)
+//        ) {
+//            Text(text = "Go To Profile", style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold), color = Color.White)
+//        }
     }
 }
