@@ -70,6 +70,9 @@ dependencies {
 
     implementation (libs.kotlinx.serialization.json) // Or latest version
 
+    // coil image loading
+    implementation("io.coil-kt:coil-compose:2.7.0")
+
 
     implementation(libs.androidx.navigation)
 }
