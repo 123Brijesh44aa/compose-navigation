@@ -101,4 +101,14 @@ dependencies {
 
     // Annotation processor
     kapt(libs.androidx.lifecycle.compiler)
+
+
+    // For AppWidgets support
+    implementation("androidx.glance:glance-appwidget:1.1.0")
+
+    // For interop APIs with Material 3
+    implementation("androidx.glance:glance-material3:1.1.0")
+
+    // For interop APIs with Material 2
+    implementation("androidx.glance:glance-material:1.1.0")
 }
